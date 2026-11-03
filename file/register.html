@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:350px;
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+label{
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:8px 0 15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+input:focus{
+    border-color:#007bff;
+    outline:none;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+#message{
+    margin-top:15px;
+    color:green;
+    font-weight:bold;
+}
+
+    </style>
+</head>
+<body>
+   <div class="cantainer"">
+    <h2>registration form</h2>
+    <form id="myform">
+        <label > name</label><br>
+        <input type="text" id="name"><br>
+        <label>course</label><br>
+        <input type="text" id="course"><br>
+        <label> Email</label><br>
+        <input type="email" id=""email> <br>
+        <label> contact number</label><br>
+        <input type="text" id="phone"><br><br>
+        <button type="submit">register</button>
+        </form>
+        <p id="message"></p>
+        </div>
+        <script>
+            document.getElementById("myform").
+                addEventListener("submit" , function(event){
+                    event.preventDefault();
+                    let name = document.getElementById("name").value;
+                    let course = document.getElementById("course").value;
+                    let email = document.getElementById("email").value;
+                    let phone = document.getElementById("phone").value;
+                    if  (name ==" " || course == " " ||  email=="" || phone ==" ") {
+                    document.getElementById("message").innerHTML="please fill all fields";
+                } 
+                else {
+                  document.getElementById("message").innerHTML="registration successfully!"+
+                "name: "+name + " <br>" +
+            "course :"  +course+ "<br>"  +
+            "email:" +email+ "<br>"  +
+            "phone:" + phone
+                }
+            } );
+        </script>
+</body>
+</html>

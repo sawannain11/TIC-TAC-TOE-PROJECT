@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            background-color:darkslategray;
+            color: black;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box; 
+            list-style: none;
+            text-decoration: none;
+            align-items: center;
+            margin-left: 300px;
+        } 
+        .calculator {
+            background-color: #f41111;
+            padding: 20px;
+            border-radius: 10%;
+            border: 1px solid black;
+            align-items: center;
+        } 
+
+        .result {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black;
+            color: black;
+            background-color: white;
+        } 
+
+        button {
+            width: 40px;
+            height: 30px;
+            margin: 3px;
+            size: 18px;
+            font-size: 20px;
+            background-color: gray;
+            border: 3px solid rgb(148, 169, 177);
+            align-items: center;
+            font-weight: bold; 
+            border-radius: 100px;
+            box-shadow: 0 4px #ce3939;
+            align-items: center;
+         }  
+          input[type="text"] {
+            width: 40%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: black;
+            background-color: white;
+        } 
+        button:hover {
+            background-color: red;
+            color: white;
+        } 
+         .calculator img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        
+
+        </style>
+</head>
+<body>
+    <img src="file/WhatsApp Image 2026-06-25 at 7.27.27 PM.jpeg" alt="">
+    <h2>Calculator</h2>
+    <div id="calculator">
+        <input type="text" id="result" disabled>
+        <br>    
+        <button onclick="addvalue('1')">1</button>
+        <button onclick="addvalue('2')">2</button>
+        <button onclick="addvalue('3')">3</button>
+        <button onclick="addvalue('+')">+</button>
+        <br>
+        <button onclick="addvalue('4')">4</button>
+        <button onclick="addvalue('5')">5</button>
+        <button onclick="addvalue('6')">6</button>
+        <button onclick="addvalue('-')">-</button>
+        <br>
+        <button onclick="addvalue('7')">7</button>
+        <button onclick="addvalue('8')">8</button>
+        <button onclick="addvalue('9')">9</button>
+        <button onclick="addvalue('*')">*</button>
+        <br>
+       <button onclick="addvalue('0')">0</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="cleardisplay()">C</button>
+        <button onclick="addvalue('/')">/</button>
+        <br>
+        
+    
+    </div>
+    
+    <script>
+        function addvalue(value) {
+            document.getElementById("result").value += value;
+        }
+
+        function calculate() {
+            var result = eval(document.getElementById("result").value);
+            document.getElementById("result").value = result;
+        }
+
+        function cleardisplay() {
+            document.getElementById("result").value = "";
+        }
+       
+    </script>
+</body>
+</html>

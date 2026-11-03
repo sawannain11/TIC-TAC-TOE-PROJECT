@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <select id="city">
+    <option> delhi </option>
+    <option>panipat</option>
+    <option>mumbai</option>
+    </select>
+    <form id="form">
+    <input id="name">
+    <button>submit</button>
+    </form> -->
+    <!-- <input type = "checkbox" id="agree"> -->
+    <!-- <input id="username" type="text"> -->
+     <!-- <div id="box">
+        <h1>sawan</h1>
+        <p>jai shree ram</p>
+    </div> -->
+    <!-- <button id="btn">click on</button> -->
+                <!-- <p id="text">move mous here </p> -->
+ <!-- <input id="box"> -->
+ 
+ <!-- <input type="text"> -->
+ <!-- <button>submit</button> -->
+  <!-- <select id="city">
+    <option>delhi</option>
+    <option>mumbai</option> -->
+    <!-- <input id="ram">
+    <p id ="output"></p> -->
+  <!-- </select>
+</form> -->
+ </body>
+    <script>
+        // parent node()
+        // get the parent of an Element
+        // let p=document.querySelector("p")
+        // console.log(p.parentNode)
+        // children
+        // let box= document.getElementById("box")
+        // console.log(box.children);
+        // first child
+        // let box = document.getElementById("box")
+        //   console.log(box.firstChild);
+        // last child
+        // let box= document.getElementById("box")
+        // console.log(box.lastChild);
+    // previous
+    // let box= document.getElementById("box")
+    //  console.log(box.previousSibling);
+    // nextsebling ;-
+    // let box=document.quarryselector("h1")
+    // console.log(box.nextsibling)
+        // let box=document.quarryselector("h1")
+        // console.log(box.previous)
+// modulus;- event an event is an action performed bt the user and browser
+// 1) onclick ;-  onclick run when the user click the button
+// Syntax
+// let button=document.getElementById("btn");
+// button.onclick=function(){
+//     alert("tum dump")
+// }
+// Element.onclick=function(){
+//     ||code
+// }
+// on dubllieclick run with the user double click
+            // let button = document.getElementById("btn")
+            // button.ondblclick=function(){
+            //     alert("double click");
+            // }
+            // onmouseover run when the mouse enter an element
+            // let p=document.getElementById("text");
+            // p.onmouseover=function(){
+            //     p.style.color="red";
+            // },,,,OL,
+            // onmouseout run when the mouse leave element
+            // let p=document.getElementById("text");
+            //  p.onmouseout=function(){
+            //      p.style.color="yellow";
+            //  }
+            // keydown run when a key is pressed.
+            // let box=document.getElementById("box")
+            // box.onkeydown=function(){
+            //     console.log("key pressed");
+            // }
+            // KEYUP
+            //  let box=document.getElementById("box")
+            // box.onkeyup=function(){
+            //     console.log("key released");
+            // }
+        // submit run when the form is submitted.
+        // document.getElementById("form").onsubmit=function(){
+        //     alert("form submit");
+        // }
+        // change
+        // run when the value change 
+        // document.getElementById("city");
+        // onchange=function(){
+        //     alert("city changes");
+        // }
+        // focus ;- run when an input get focus
+        // let b = document.getElementById("ram")
+        // onblur=function(){
+        //     b.style.background="white";
+        // }/
+        // input ;- run every time the user type.
+
+        // document.getElementById("name")
+        // let ram = document.getElementById("ram")
+        // ram.oninput=function(){
+        //     document.getElementById("output").innerText = ram.value;
+        //   }
+        // onclick vs linner
+        // let button= document.getElementById("btn")
+        // button.onclick = function(){
+        //     alert("hello");
+        // }
+        // add.eventlistener()
+        // let button=document.getElementById("btn")
+        // button.addEventListener("click",function() {
+        //     alert("hello")
+        // });
+        // module ;- event object  ;- when an event occurs,js automatically creat an event object.
+        // button.onclick = function (event){
+        //     console.log(event);
+        // }
+        // event target;- return the element that trigered the event
+        // button.onclick=function(event){
+        //     console.log(event.type)
+        // }
+        // event.type ;;- return the event name.
+        // 1. value ;- value gat or change the value entered by the user
+        //   let user=document.getElementById("username");
+        //   console.log(user.value);
+        // let user = document.getElementById("username").value="admine";
+        // 2) defiation used for checkbox and radio
+        // let check =  document.getElementById("agree");
+        // console.log(check.checked);
+        // 3) selector.index
+        // let city =document.getElementById("city");
+        // city.selectedIndex=2;
+        // console.log(city.selectedIndex);
+        // form validation
+        // chacking wether the user input is correct before submitting
+        // example ;- empty field check .email format check .password length check
+    //     let form=document.getElementById("form").onsubmit=function(event){
+    //     let name= document.getElementById("name").value;
+    //     if (name===""){
+    //         alert("Enter name");
+    //         event.preventDefault();
+    //     }
+    // }
+    // let user = localStorage.getItem("username");
+    // console.log(user);
+       let user = localStorage.clear();
+       console.log(user);
+    </script>
+</body>
+</html>

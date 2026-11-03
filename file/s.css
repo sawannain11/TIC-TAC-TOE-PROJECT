@@ -1,0 +1,68 @@
+body{
+    background-color: black;
+    color: white;
+}
+.logo{
+    display: flex;
+}
+.main{
+    margin-left: 100px;
+    margin-top: 15px;
+    gap: 30px;
+    display: flex;
+}
+.main a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    margin-left: 150px;
+    margin-top: 10px;
+    background-color: yellow;
+    color: black;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+}
+.aa {
+    margin-left: 10px;
+}
+.ab {
+    margin-left: 30px;
+}
+.radhe{
+    margin-left: 30px;
+    display: flex;
+
+}
+.main1 h4{
+    color: rgb(225, 12, 165);
+}
+.main1 h4{
+    color: deepskyblue;
+}
+.main1 h5{
+    color: yellow;
+}
+.image img{
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 6px solid rgb(15, 199, 178) ;
+}
+.logo{
+    display: flex;
+    height: 80px;
+    background-color: black;
+    align-items: center;
+}
+.name{
+    color: white;
+    display: flex;
+    margin-left: 20px;
+    font-size: px;
+}
+.name1{
+    color: yellow;
+}

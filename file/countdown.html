@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body>
+    <h1 id="timer"></h1>
+    <button onclick="startcountdown">start</button>
+    <button onclick="stopcountdown">stop</button> -->
+</body>
+<script>
+    // function statcountdown(){
+    //     timer--;
+    //     document.getElementById("timer").innerText=timer;
+    // }
+    // function stopcountdown(){
+    //     timer=0;
+    //     document.getElementById("timer").innerText=timer;
+    // }
+
+    let count=10;
+    
+ let timer=setInterval(function(){
+        console.log(count);
+        count--;
+        if(count==0){
+            clearInterval(timer);
+        }
+        +
+    },1000);
+   
+</script>
+</html>

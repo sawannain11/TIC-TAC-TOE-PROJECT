@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>user</h1>
+    <div id="user"></div>
+    <!-- inheritance :-  inheritance allow one class to use properties and methods of another class -->
+     <!-- it provides code reusability -->
+      <!-- 2)less code -->
+       <!-- super keyword is used to access parent class methods and constructors -->
+        <!-- Hybrid Inheritance:- hybrid inheritance is a combination of two or more inheritance types -->
+         <!-- javascript does not support multiple inheritance but we can achieve it by using mixins -->
+          <!-- getter method ;- A getter is a special method that is used to read .
+    get the value of an object propertywithout it -->
+    <!-- 1) it behve like a property not a method.
+     2) it is defined using the get keyword -->
+     <!-- syntax:- get propertyName(){ -->
+        <!-- // return this.propertyName;     -->
+    <!-- } -->
+    <!-- setter method :- A setter is a special method that is used to set the value of an object property. -->
+     <!-- syntax of setter method :- set propertyName(value){
+        this.propertyName=value; -->
+</body>
+<script>
+
+    // class animal{
+    //     eat(){
+    //         console.log("eating");
+    //     }
+    // }
+    // class dog extends animal{
+    //     bark(){
+    //         console.log("barking");
+    //     }
+    // }
+    // let d= new dog();
+    // d.bark();
+    // d.eat();
+
+
+    // class person{
+    //     constructor(name){
+    //         this.name=name;
+    //     }
+    // }
+    // class student extends person{
+    //     constructor(name,roll){
+    //         super(name);
+    //         this.roll=roll;
+    //     }
+    // }
+    // let s= new student("sachin",12);
+    // console.log(s.name);
+
+
+    // class animal{
+    //     eat(){
+    //         console.log("eating");
+    //     }
+    // }
+    // class dog extends animal{
+    //     eat(){
+    //         super.eat();
+    //         console.log("barking");
+    //     }
+    // }
+    // class babyDog extends dog{
+    //     eat(){
+    //         super.eat();
+    //         console.log("crying");
+    //     }
+    // }
+    // let d= new babyDog();
+    // d.eat();
+    // // d.bark();
+    // // d.cry();
+
+
+    // multipel inheritance is not possible in javascript but we can achieve it by using mixins    
+    // java script does not support multiple inheritance but we can achieve it by using mixins. A class cannot extend more than one class. But we can use mixins to achieve multiple inheritance in JavaScript. A mixin is a class that contains methods for use by other classes without having to be the parent class of those other classes. 
+
+
+    // class animal{
+    //     eat(){
+    //         console.log("eating");
+    //     }
+    // }
+    // class cat extends animal{
+    //     jump(){
+    //         super.eat();
+    //         console.log("breathing");
+    //     }
+    // }
+    // class Dog extends animal{
+    //     show(){
+            
+    //         console.log("crying");
+    //     }
+    // }
+    // class monkey extends animal{
+    //     display(){
+            
+    //         console.log("jumping");
+    //     }
+    // }
+    // let d= new cat();
+    // let t=new Dog();
+    // let m=new monkey();
+    // d.eat();
+    // d.jump();
+    // t.show();
+    // m.display();
+
+
+    // let Run={
+    //     run(){
+    //         console.log("running");
+    //     }
+    // };
+    // let Jump={
+    //     jump(){
+    //         console.log("jumping");
+    //     }
+    // };
+    // class person{}
+    // Object.assign(person.prototype,Run,Jump);
+    //     let p= new person();
+    //     p.run();
+    //     p.jump();
+    
+
+
+    // let fly={
+    //     fly(){
+    //         console.log("flying");
+    //     }
+    // }
+    // class animal{
+    //     bark(){
+    //         console.log("barking");
+    //     }
+    // }
+    // class bird extends animal{}
+    // Object.assign(bird.prototype,fly);
+    // let b= new bird();
+    // b.fly();
+    // b.bark();
+
+
+
+    // class person{
+    //     constructor(name){
+    //         this._name=name;
+    //     }
+    //     get name(){
+    //         return this._name;
+    //     }
+    //     set name(newName){
+    //         this._name=newName;
+    //     }
+    // }
+    //     class student extends person{
+    //         constructor(name,course){
+    //             super(name);
+    //             this.course=course;
+    //         }
+            
+    //         display(){
+    //             console.log(this.name);
+    //             console.log(this.course);
+    //         }
+    //     }
+    //     let s= new student("sachin","bca");
+    //     s.display();
+    //     s.name="sawan";
+    //     console.log("updated name", s.name);
+
+
+
+    // let timer = setTimeout(() => {
+    //     alert("welcome");
+    // }, timeout);
+    // let  result = fetch("https://jsonplaceholder.typicode.com/users")
+    // console.log(result);
+
+
+    // .than()
+
+    // fetch("https||jason.placeholder.typicode.com/users")
+    // .then(function(response){
+    //     console.log(response);
+    // }) 
+
+
+    // getting json data. 
+    // fetch("https://jsonplaceholder.typicode.com/users")
+    // .then(function(response){
+    //     return response.json();
+    // })
+    // .then(function(data){
+    //     console.log(data);
+    // });
+
+
+
+    // fetch("https://jsonplaceholder.typicode.com/users")
+    // .then(response => response.json())
+    // .then(data =>{
+    //     let user=document.getElementById("user");
+    //     data.forEach(userData =>{
+    //         let p=document.createElement("li");
+    //         p.textContent=userData.name+" - "+userData.email;
+    //         user.appendChild(p);
+    //     });
+    // });
+
+
+
+    // what is get  Request = a get request is used to retrieve data from a server. It is the most common type of HTTP request and is used to request data from a specified resource.
+   
+   
+    // getRequest(); exapmle
+
+
+
+    // fetch("https://jsonplaceholder.typicode.com/users",{
+    //     method:"GET"})
+    //     .then(response => response.json())
+    //     .then(data =>{
+    //         console.log(data);
+    //     });
+
+
+
+    // checking responce status
+
+    // fetch("https://jsonplaceholder.typicode.com/users")
+    // .then(response =>{
+    //     console.log("Response status:", response.status);
+    //     console.log("Response status text:", response.statusText);
+    //     console.log("Response.status:", response.ok);
+    //     return response.json();
+    // })
+    //  .then(data =>{
+    //     console.log(data);
+    // })
+
+
+
+    // http status codes
+
+
+    // fetch("https://jsonplaceholder.typicode.com/users")
+    // .then(response => {
+    //     if(!response.ok){
+    //         throw new Error("HTTP error! status: "+ response.status);
+    //     };
+    //     return response.json();
+    // })
+    // .then(data =>{
+    //     console.log(data);
+    // })
+    // .catch(error =>{
+    //     console.log(error);
+    // });
+
+
+
+    // post request
+    // get is mainly used to retrieve data from a server, while post is mainly used to send data to a server.
+    
+
+    
+       
+
+    
+
+
+</script>
+</html>

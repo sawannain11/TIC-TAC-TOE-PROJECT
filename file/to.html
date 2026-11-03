@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin-top: 15%;
+            
+        }
+        .cantainer h2{
+            color: red;
+        }
+        .cantainer{
+            margin-left: 30%;
+            border-radius: 10%;
+           border-color: aqua;
+            border: 10px solid;
+            text-align: center;
+            margin-right: 30%;
+        }
+        ::placeholder{
+            color:red;
+            background-color: yellow;
+        }
+        .cantainer button{ 
+            height: 20px;
+            width: 40px;
+            color: red;
+            background-color:mediumspringgreen;
+        }
+    </style>
+</head>    
+<body>
+    <div class="cantainer">
+        <h2>To do list</h2>
+
+        <input type="text" id="task" placeholder="enter your task">
+                <button onclick="addtask()">Add</button>
+        <ul id="tasklist"></ul>
+    </div>
+ <script src="to.js"></script>
+</body>
+</html>
